@@ -1,0 +1,10 @@
+{
+  "random_state": 42,
+  "test_size": 0.2,
+  "best_model": {
+    "id": "KNN-hog-k3",
+    "f1_macro": 0.9944,
+    "accuracy": 0.9944
+  },
+  "n_experiments": 19
+}

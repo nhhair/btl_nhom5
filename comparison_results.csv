@@ -1,0 +1,20 @@
+id,feature,algo,params,scale,note,accuracy,precision_macro,recall_macro,f1_macro,fit_time_s
+KNN-pixels-baseline,pixels,KNN,"{'n_neighbors': 5, 'metric': 'euclidean', 'weights': 'distance'}",no,BASELINE - KNN cau hinh gan mac dinh,0.9833,0.9834,0.9831,0.983,0.001
+KNN-pixels-k1-euclidean,pixels,KNN,"{'n_neighbors': 1, 'metric': 'euclidean', 'weights': 'distance'}",yes,scale pixels (bat buoc voi K-NN),0.9667,0.967,0.9663,0.9662,0.001
+KNN-pixels-k1-manhattan,pixels,KNN,"{'n_neighbors': 1, 'metric': 'manhattan', 'weights': 'distance'}",yes,scale pixels (bat buoc voi K-NN),0.9778,0.9783,0.9775,0.9775,0.001
+KNN-pixels-k3-euclidean,pixels,KNN,"{'n_neighbors': 3, 'metric': 'euclidean', 'weights': 'distance'}",yes,scale pixels (bat buoc voi K-NN),0.9667,0.9673,0.9664,0.9663,0.001
+KNN-pixels-k3-manhattan,pixels,KNN,"{'n_neighbors': 3, 'metric': 'manhattan', 'weights': 'distance'}",yes,scale pixels (bat buoc voi K-NN),0.9833,0.9838,0.9831,0.9832,0.001
+KNN-pixels-k5-euclidean,pixels,KNN,"{'n_neighbors': 5, 'metric': 'euclidean', 'weights': 'distance'}",yes,scale pixels (bat buoc voi K-NN),0.9667,0.9673,0.9664,0.9661,0.001
+KNN-pixels-k5-manhattan,pixels,KNN,"{'n_neighbors': 5, 'metric': 'manhattan', 'weights': 'distance'}",yes,scale pixels (bat buoc voi K-NN),0.9889,0.9896,0.9887,0.9887,0.001
+KNN-pixels-k7-euclidean,pixels,KNN,"{'n_neighbors': 7, 'metric': 'euclidean', 'weights': 'distance'}",yes,scale pixels (bat buoc voi K-NN),0.9667,0.9679,0.9665,0.9665,0.001
+KNN-pixels-k7-manhattan,pixels,KNN,"{'n_neighbors': 7, 'metric': 'manhattan', 'weights': 'distance'}",yes,scale pixels (bat buoc voi K-NN),0.9778,0.9795,0.9775,0.9775,0.001
+DT-pixels-gini-dNone,pixels,DT,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1}",no,DT khong can scale,0.825,0.8236,0.8242,0.823,0.019
+DT-pixels-gini-d5,pixels,DT,"{'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 1}",no,DT khong can scale,0.6694,0.7003,0.6676,0.663,0.02
+DT-pixels-gini-d10,pixels,DT,"{'criterion': 'gini', 'max_depth': 10, 'min_samples_leaf': 1}",no,DT khong can scale,0.8111,0.8145,0.8104,0.8114,0.016
+DT-pixels-entropy-dNone,pixels,DT,"{'criterion': 'entropy', 'max_depth': None, 'min_samples_leaf': 1}",no,DT khong can scale,0.8389,0.8424,0.8384,0.839,0.03
+DT-pixels-entropy-d5,pixels,DT,"{'criterion': 'entropy', 'max_depth': 5, 'min_samples_leaf': 1}",no,DT khong can scale,0.75,0.7522,0.7484,0.745,0.024
+DT-pixels-entropy-d10,pixels,DT,"{'criterion': 'entropy', 'max_depth': 10, 'min_samples_leaf': 1}",no,DT khong can scale,0.8556,0.8566,0.8551,0.8542,0.019
+KNN-hog-k3,hog,KNN,"{'n_neighbors': 3, 'metric': 'euclidean', 'weights': 'distance'}",yes,scale hog,0.9944,0.9945,0.9944,0.9944,0.001
+KNN-hog-k5,hog,KNN,"{'n_neighbors': 5, 'metric': 'euclidean', 'weights': 'distance'}",yes,scale hog,0.9944,0.9945,0.9944,0.9944,0.001
+DT-hog-dNone,hog,DT,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1}",no,raw hog,0.8111,0.8173,0.8109,0.8116,0.325
+DT-hog-d10,hog,DT,"{'criterion': 'gini', 'max_depth': 10, 'min_samples_leaf': 1}",no,raw hog,0.8306,0.8396,0.8307,0.8321,0.282

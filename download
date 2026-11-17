@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+
+# Not chay cac thu muc ket qua? (giu lai trong repo de minh chung)
+# Neu muon loai bo artifact khi commit, bo comment 2 dong duoi day:
+# figures/
+# results/
+# models/
